@@ -2,6 +2,8 @@
 
 Notchtify is a simple local music player with express server, you can add your custom songs in the ``./public/audio`` folder to play your songs in all on your local network, you can modify and use nginx to host in a virtual machine and access between a domain.
 
+<img src="https://i.imgur.com/TDpVqoB.png">
+
 # Proyect Files
 ```bash
 │   .env.example
@@ -76,4 +78,6 @@ You can modify the Web Page, the main file is inside **views** folder, is in for
 ## Start the Player
 
 To start the server you have to use the command **``npm start``**, If you want to run the Software in the backgroung I recommend you to use the package [pm2](https://www.npmjs.com/package/pm2) PM2 is a production process manager for Node.js applications with a built-in load balancer. It allows you to keep applications alive forever, to reload them without downtime and to facilitate common system admin tasks.
+
+You can get support sending a message to **Don_oso005#6475** on Discord. If you have see any bugs please report in  **[Bugs](https://github.com/Donoso005/Notchtify/issues)**
 
