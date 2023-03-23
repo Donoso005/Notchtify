@@ -3,7 +3,7 @@ const figlet = require('figlet')
 const app = express();
 require('dotenv').config();
 
-const port = parseInt(process.env.APP_PORT);
+const port = process.env.APP_PORT;
 
 app.get('/', (req, res) =>{
     res.render('index')

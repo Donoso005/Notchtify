@@ -1,37 +1,13 @@
 let songs = [
-  {
-    "name": "Aengus",
-    "path": "../audio/Aengus.mp3",
+{
+    "name": "Mixhit Tech",
+    "path": "../audio/mixkit-tech-house-vibes-130.mp3",
     "artist": "Don_oso005",
     "cover": ""
 },
 {
-    "name": "Aereda",
-    "path": "../audio/Aereda.mp3",
-    "artist": "Don_oso005",
-    "cover": ""
-},
-{
-    "name": "After The Rain",
-    "path": "../audio/After The Rain.mp3",
-    "artist": "Don_oso005",
-    "cover": ""
-},
-{
-    "name": "Arrival",
-    "path": "../audio/Arrival.mp3",
-    "artist": "Don_oso005",
-    "cover": ""
-},
-{
-    "name": "Ascending To Heaven",
-    "path": "../audio/Ascending To Heaven.mp3",
-    "artist": "Don_oso005",
-    "cover": ""
-},
-{
-    "name": "At The Precipice",
-    "path": "../audio/At The Precipice.mp3",
+    "name": "Mixhit Hazy",
+    "path": "../audio/mixkit-hazy-after-hours-132.mp3",
     "artist": "Don_oso005",
     "cover": ""
 },
