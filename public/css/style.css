@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@200&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../images/mountains.jpg);
+    background-size: cover;
+    font-family: 'Chivo Mono', monospace;
+}
+
+.music-player {
+    width: 450px;
+    height: 650px;
+    border-radius: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 40px 100px rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    overflow: hidden;
+    color: #91aeff;
+
+}
+
+.music-name, .artist-name {
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.music-name {
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.artist-name {
+    font-size: 20px;
+
+}
+
+.disk {
+    
+    position: relative;
+    display: block;
+    margin: 40px auto;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    background-image: url(../images/cover1.png);
+    background-size: cover;
+    border: 3px white solid;
+    box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.08);
+    animation: rotate 20s linear infinite;
+    animation-play-state: paused;
+}
+
+.disk.play {
+    animation-play-state: running;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.disk::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: url(../images/mountains.jpg);
+}
+
+.range {
+    margin-top: 30px;
+    width: 100%;
+    position: relative;
+}
+
+.seek-bar {
+    width: 100%;
+    height: 5px;
+    border-radius: 10px;
+    background: green;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.seek-bar::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 10px;
+    height: 10px;
+    box-shadow: -400px 0 0 400px purple;
+}
+
+.volume-bar {
+    width: 50%;
+    height: 5px;
+    right: 0;
+    border-radius: 10px;
+    background: green;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.volume::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 10px;
+    height: 10px;
+    box-shadow: -400px 0 0 400px purple;
+}
+
+.current-time, .song-duration {
+    font-size: 17px;
+}
+
+.song-duration {
+    position: absolute;
+    right: 0;
+}
+
+.controls {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 35px;
+}
+
+.play-btn {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    border-radius: 100px;
+}
+
+.play-btn span {
+    position: absolute;
+    top: 50%;
+    left: 25px;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 30px;
+    border-radius: 2px;
+    background: black;
+    transition: .5s;
+}
+
+.play-btn span:nth-child(2) {
+    left: 55%;
+    transform-origin: center;   
+}
+
+.play-btn.pause span:nth-child(2) {
+    transform: translateY(-50%) scaleY(0);
+}
+
+.play-btn.pause span:nth-child(1) {
+    width: 35%;
+    height: 53%;
+    transform: translate(10%, -50%);
+    border-radius: 0;
+    clip-path: polygon(0 0, 100% 50%, 100% 50%, 0% 100%);
+    
+}
+
+.play-btn.pause {
+    animation: pulse 2s linear infinite;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0;
+    }
+    50% {
+        box-shadow: 0 0 0 5px rgba(92, 13, 138, 0.1);
+    }
+    100% {
+        box-shadow: 0 0 0 5px rgba(92, 13, 138, 0.4);
+    }
+}
+
+.btn {
+    margin: 10px;
+    width: 55px;
+    height: 55px;
+    align-items: center;
+    border-radius: 100px;
+}
+
+.img-back, .img-for {
+    font-size: 20px;
+    text-align: center;
+}

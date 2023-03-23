@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Player - Notchtify</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <audio src="" id="audio"></audio>
+    <div class="music-player">
+        <h1 class="music-name">Songs</h1>
+        <p class="artist-name">Artist</p>
+        
+        <div class="disk"></div>
+        
+        <div class="range">
+            <input type="range" value="0" class="seek-bar">
+            <span class="current-time">00:00</span>
+            <span class="song-duration">00:00</span>
+        </div>
+
+        <div class="controls">
+            <button class="btn backward"><i class="fa-solid fa-backward img-back"></i></button>
+            <button class="play-btn pause">
+                <span></span>
+                <span></span>
+            </button>
+            <button class="btn forward"><i class="fa-solid fa-forward img-for"></i></button>
+        </div>
+    </div>
+
+    <script src="./js/data.js"></script>
+    <script src="./js/app.js"></script>
+    <script defer src="https://app.embed.im/snow.js"></script>
+    <script src="https://kit.fontawesome.com/72908e0106.js" crossorigin="anonymous"></script>
+</body>
+</html>

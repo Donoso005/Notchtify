@@ -1,0 +1,40 @@
+{
+  "name": "notchtify",
+  "version": "1.0.0",
+  "description": "A simple local music player.",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Donoso005/Discord-Bot-Template.git"
+  },
+  "keywords": [
+    "DiscordBot",
+    "Bot",
+    "Discord",
+    "SlashCommands",
+    "Slash",
+    "NotchDev",
+    "Notch",
+    "Discord.js",
+    "Template",
+    "Discord-Bot-Template"
+  ],
+  "author": "Don_oso005",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Donoso005/Discord-Bot-Template/issues"
+  },
+  "homepage": "https://github.com/Donoso005/Discord-Bot-Template#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.21"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "figlet": "^1.5.2"
+  }
+}
