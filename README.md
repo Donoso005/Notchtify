@@ -4,7 +4,7 @@ Notchtify is a simple local music player with express server, you can add your c
 
 <img src="https://i.imgur.com/TDpVqoB.png">
 
-# Proyect Files
+# Project Files
 ```bash
 │   .env.example
 │   app.js
